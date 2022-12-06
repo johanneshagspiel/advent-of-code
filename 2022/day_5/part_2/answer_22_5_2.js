@@ -64,10 +64,6 @@ for (let i = 0; i < secondHalf.length; i++) {
     const fromArray = parseInt(instruction[3])
     const toArray = parseInt(instruction[5])
 
-    console.log(amount);
-    console.log(arrayArray[fromArray - 1].length)
-    console.log(arrayArray[toArray - 1].length)
-
     const toPushArray = []
 
     for (let j = 0; j < amount; j++) {
@@ -80,11 +76,6 @@ for (let i = 0; i < secondHalf.length; i++) {
         const toPush = toPushArray.pop();
         arrayArray[toArray - 1].push(toPush);
     }
-
-    console.log(" ")
-    console.log(arrayArray[fromArray - 1].length)
-    console.log(arrayArray[toArray - 1].length)
-    console.log("##")
 }
 
 let res = ""
